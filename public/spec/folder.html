@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/styles/github-dark.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=keyboard_arrow_down,keyboard_arrow_up" />
+    <style>
+        :root {
+            --color-font: #8E8176;
+            --color-base : #F9F8EF;
+            --color-main: #88CDD8;
+            --color-yellow: #F8F1A3;
+            --color-foreign: #F49E87;
+        }
+        body {
+            background-color: var(--color-base);
+            color: var(--color-font);
+            margin: 0;
+        }
+        a {
+            color: var(--color-font);
+        }
+        main {
+            display: grid;
+            gap: 40px;
+            background-color: var(--color-main);
+            padding: 30px;
+        }
+        .content-wrapper {
+            background-color: var(--color-base);
+            padding: 5px 20px;
+            min-width: 0;
+        }
+        .content-wrapper section:first-of-type {
+            margin-top: clamp(6px, 3vw, 20px);
+        }
+        section {
+            margin: clamp(20px, 10vw, 60px) clamp(10px, 5vw, 30px);
+        }
+        h2 {
+            color: var(--color-foreign);
+        }
+        h4 {
+            margin-bottom: 0;
+        }
+        p { padding: 0 1em; }
+        pre code {
+            font-family: 'Cascadia Code', 'Fira Code', monospace;
+            line-height: 1.6;
+            display: block;
+            padding: 1em; 
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 style="padding: 0 0.5em;">使うフォルダ一覧</h1>
+    </header>
+
+    <nav>
+        <ol>
+            <a href="#config"><li>config</li></a>
+            <a href="#public"><li>public</li></a>
+            <a href="#resources"><li>resoures</li></a>
+            <a href="#routes"><li>routes</li></a>
+        </ol>
+    </nav>
+    
+    <main>
+        <div class="content-wrapper">
+            <h2 id="public">public</h2>
+            <section>
+                <h3>images</h3>
+                <p>画像フォルダ</p>
+                <pre><code class="language-php">&lt;img src="{{ asset('images/画像jpeg') }}"&gt;</code></pre>
+            </section>
+        </div>
+
+        <div class="content-wrapper">
+            <h2 id="resources">resources</h2>
+            <section>
+                <h3>css</h3>
+                <p>css(TaildWind4)のフォルダ</p>
+            </section>
+
+            <section>
+                <h3>resources/views/articles</h3>
+                <p>記事書くフォルダ</p>
+            </section>
+
+            <section>
+                <h3>resources/views/layouts</h3>
+                <p>共通レイアウト</p>
+                使うとき
+<pre><code class="language-php">@extends('layouts.app')
+@section('title', 'おとくい！プラッツカルト！_〇〇_отаку_и_плацкарт!!')　//タイトル
+@section('content')
+
+//ここに中身を書く
+
+@endsection</code></pre>
+        </div>
+
+        <div class="content-wrapper">
+            <h2 id="config">config</h2>
+            <section>
+                <h3>articles.php</h3>
+                <p>記事一覧ページに載せる記事概要</p>
+<pre><code class="language-php">[
+    "title"         => "記事タイトル",
+    "desc"          => "概要",
+    "category_name" => "カテゴリーの名前",
+    "category"      => "foreignかdomesticかothers",
+    "sub_category"  => "サブカテゴリー",
+    "tags"          => "タグ",
+    "series"        => "シリーズ名",
+    "url"           => "URL",
+    "img"           => "トプ画",
+    "date"          => "日付"
+],</code></pre>
+            </section>
+        </div>
+
+        <div class="content-wrapper">
+            <h2 id="routes">routes</h2>
+            <section>
+                <h3>web.php</h3>
+                <p>記事を書いたらここに追加</p>
+                <pre><code class="language-php">Route::view('/otokuiplatkart/foreign_railway/uzkz_matome', 'articles/foreign_railway/uzkz_matome')->name('uzkz_matome');</code></pre>
+                <p>
+                    <span style="font-weight: boldeer;">【　Route::view('/〇〇', '△△')->name('□□');　】</span><br><br>
+
+                    〇〇に表示させたいURL名を書く<br>
+                    例）'/train'と書いたら、http://127.0.0.1:8000/train というURLになる<br><br>
+
+                    △△にファイルがどこに格納されているのかを書く<br>
+                    例）resource/views/articles/othersにあるなら'articles/others/train'と書く<br><br>
+
+                    □□にどんな名前で管理したいのかを書く<br>
+                    ファイル名と同じにすると管理が楽<br>
+                    例）->name('train')なら、&lt;a href="{{ route('train') }}&gt;で遷移できるようになる<br>
+                </p>
+                <p style="margin-top: 2em; margin-bottom: 0;">使うとき</p>
+                <pre style="margin-top: 0.5em;"><code class="language-php">&lt;a href="{{ route('uzkz_matome') }}"&gt;</code></pre>
+            </section>
+        </div>
+    </main>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/highlight.min.js"></script>
+<script>hljs.highlightAll();</script>
+</body>
+</html>
