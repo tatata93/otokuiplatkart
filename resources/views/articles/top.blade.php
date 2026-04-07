@@ -18,7 +18,7 @@
                     <div style="position: absolute; top: 0; left: 0; height: 2em; width: 100%; background: linear-gradient(var(--color-main) 0% 5%, transparent 90% 100%);"></div>
                     <div style="position: absolute; bottom: 0; left: 0; height: 3em; width: 100%; background: linear-gradient(transparent 0% 5%, color-mix(in srgb, var(--color-main), transparent 60%) 20% 35%, transparent 50% 55%, var(--color-main)) 95% 100%, radial-gradient(50% 100% ellipse at top -4em right 2em, transparent 0% 40%, color-mix(in srgb, var(--color-base), transparent 40%) 40% 55%, transparent) 70% 100%;"></div>
 
-                    <div style="position: absolute; top: 90vh; right: 5em;"><svg class="w-[4.6em] h-[1.6em] filter-[url(#shadow)]"><use xlink:href="#sakana" /></svg></div>
+                    <div class="absolute animate-[sakanaGo_30s_linear_infinite]"><svg class="w-[4.6em] h-[1.6em] filter-[url(#shadow)]"><use xlink:href="#sakana" /></svg></div>
                     <div style="position: absolute; top: 40vh; right: 1.5em;"><svg class="w-[clamp(200px,25vw,600px)] h-auto aspect-6/11 text-base [--parts-color:var(--color-font)] animate-[kakukakuMirror_1.4s_steps(1)_infinite] filter-[url(#shadow)]"><use xlink:href="#azarashi2" /></svg></div>
                     <div style="position: absolute; top: 130vh; left: 1.5em;"><svg class="w-[clamp(200px,30vw,600px)] h-auto aspect-5/4 text-base [--parts-color:var(--color-font)] animate-[kakukakuMirror_1.4s_steps(1)_infinite] filter-[url(#shadow)]"><use xlink:href="#azarashi" /></svg></div>
                         
@@ -105,10 +105,12 @@
                     </a>
                 </div>
             @endforeach
-            <div>
-                <svg class="w-[9em] h-[4em] filter-[url(#shadow)]"><use xlink:href="#azarashiBtn2" /></svg>
-                <div></div>
-            </div>
+            <a href="{{ route('articles') }}" class="md:col-span-2 xl:col-span-1 justify-self-center hover:scale-105">
+                <div class="relative">
+                    <div class="relative pt-4"><svg class="w-[clamp(120px,50vw,200px)] h-auto aspect-9/4 [--body-color:color-mix(in_srgb,var(--color-foreign),var(--color-font)_50%)] [--parts-color:var(--color-base)] filter-[url(#shadow)]"><use xlink:href="#azarashiBtn2" /></svg></div>
+                    <div class="absolute top-1/2 left-1/2 -translate-x-[calc(50%-0.9em)] -translate-y-[calc(50%-0.1em)] text-[1.3em] text-base font-bold">more</div>
+                </div>
+            </a>
         </div>
     </section>
 

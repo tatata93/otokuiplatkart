@@ -22,7 +22,7 @@
                         <use xlink:href="#azarashiBtn" />
                     </svg>
                 </div>
-                <div class="absolute top-1/2 left-1/2 -translate-x-[calc(50%+0.55em)] -translate-y-[calc(50%-0.35em)] text-[2.5em] text-main] [-webkit-text-stroke:0.04em_var(--color-main)]">
+                <div class="absolute top-1/2 left-1/2 -translate-x-[calc(50%+0.55em)] -translate-y-[calc(50%-0.35em)] text-[2.5em] text-main [-webkit-text-stroke:0.04em_var(--color-main)]">
                     前
                 </div>
             </div>
@@ -36,7 +36,7 @@
                     <use xlink:href="#azarashiBtn2" />
                 </svg>
             </div>
-            <div class="absolute top-1/2 left-1/2 -translate-x-[calc(50%-1.5em)] -translate-y-[calc(50%+0.2em)] text-[2.5em] text-yellow)] [-webkit-text-stroke:0.04em_var(--color-yellow)]">
+            <div class="absolute top-1/2 left-1/2 -translate-x-[calc(50%-1.5em)] -translate-y-[calc(50%+0.2em)] text-[2.5em] text-yellow [-webkit-text-stroke:0.04em_var(--color-yellow)]">
                 記事一覧
             </div>
         </div>
@@ -50,7 +50,7 @@
                         <use xlink:href="#azarashiBtn" />
                     </svg>
                 </div>
-                <div class="absolute top-1/2 left-1/2 -translate-x-[calc(50%+0.55em)] -translate-y-[calc(50%-0.35em)] text-[2.5em] text-main] [-webkit-text-stroke:0.04em_var(--color-main)]">
+                <div class="absolute top-1/2 left-1/2 -translate-x-[calc(50%+0.55em)] -translate-y-[calc(50%-0.35em)] text-[2.5em] text-main [-webkit-text-stroke:0.04em_var(--color-main)]">
                     次
                 </div>
             </div>

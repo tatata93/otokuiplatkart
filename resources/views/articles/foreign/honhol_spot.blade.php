@@ -90,8 +90,8 @@
                 3.線路に向かって歩く。集落沿いの水色のルートも道路を行くピンクのルートもある。あとは好きに写真撮れ。
             </p>
             <div class="grid grid-cols-2">
-                <img src="{{ asset('images/mngl2023/DSC_0004.jpg') }}" alt="写真1">    
-                <img src="{{ asset('images/mngl2023/DSC_0005.jpg') }}" alt="写真2">
+                <img src="{{ asset('images/mngl2023/DSC_0004.JPG') }}" alt="写真1">    
+                <img src="{{ asset('images/mngl2023/DSC_0005.JPG') }}" alt="写真2">
             </div>
             <p>
                 沼に注意
@@ -128,8 +128,8 @@
                 場所はここ、バス停のすぐ近く。ぱったりと旅客も貨物も途絶える時間があるので腹ごしらえをしよう。
             </p>
             <div class="grid grid-cols-2 mt-8">
-                <img src="{{ asset('images/mngl2023/DSC_0010.jpg') }}" alt="写真1">
-                <img src="{{ asset('images/mngl2023/DSC_0008.jpg') }}" alt="写真2">
+                <img src="{{ asset('images/mngl2023/DSC_0010.JPG') }}" alt="写真1">
+                <img src="{{ asset('images/mngl2023/DSC_0008.JPG') }}" alt="写真2">
             </div>
             <p>
                 S-cafeのSは線路のS字カーブからとったそうだ。

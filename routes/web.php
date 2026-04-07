@@ -28,3 +28,8 @@ Route::view('/otokuiplatkart/rujigou_noritetsu', 'articles/foreign/rujigou_norit
 //その他の記事
 Route::view('/otokuiplatkart/others/album', 'articles/others/album')->name('album');
 Route::view('/otokuiplatkart/others/memorygame', 'articles/others/memorygame')->name('memorygame');
+
+
+Route::middleware(['auth'])->group(function () {
+    Route::view('/gallery', 'articles/gallery')->name('gallery');
+});

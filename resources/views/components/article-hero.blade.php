@@ -27,9 +27,9 @@
         </svg>
     </div>
 
-    <div class="py-8 px-4 leading-loose">
+    <div class="py-8 px-[clamp(5px,5vw,50px)] leading-loose">
         <h2 class="font-bold text-[clamp(1.5rem,5vw,2rem)] mb-1">{{ $title }}</h2>
         <time datetime="{{ $datetime }}">投稿：{{ $date }}</time>
-        <p class="text-lg mt-4">{!! $desc !!}</p>
+        <p class="text-lg mt-4 max-w-[46em] mx-auto">{!! $desc !!}</p>
     </div>
 </div>
