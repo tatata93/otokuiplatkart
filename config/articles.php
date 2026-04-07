@@ -11,7 +11,7 @@ return [
             "tags"          => "乗り鉄,撮り鉄,撮影地,中国,中国鉄路,SS3",
             "series"        => "china2026",
             "url"           => "rujigou_noritetsu",
-            "img"           => "images/china2026/KPII2058.jpg",
+            "img"           => "images/china2026/PKII2058.jpg",
             "date"          => "2026.04.08"
         ],
         [
